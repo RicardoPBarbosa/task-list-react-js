@@ -4,6 +4,8 @@
 
 *Praticing React with the Flux architecture*
 
+![Screenshot](screenshot.gif)
+
 ## Config
 
 You will need a mLab account to get the API Key to store the tasks, you can enter here: [mLab](https://mlab.com/login/) and get the key in the user page.
