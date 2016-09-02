@@ -1,0 +1,75 @@
+@import 'https://fonts.googleapis.com/css?family=Capriola';
+body{background:#F4F4F4;margin:0;padding:0;width:100%;height:100%;font-family: 'Roboto', sans-serif;-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;}
+a{color:white;text-decoration:none;font-weight:400;}
+a:hover{color:white;}
+a:visited{color:white;text-decoration:none;}
+a:focus{color:white;text-decoration:none;}
+img{width:100%;}
+button:active{outline:none;border:none;}
+button:focus{outline:none;border:none;}
+button{background:none;}
+#app{width:400px;margin:auto;margin-top:100px;position:relative;height:600px;overflow:hidden;background:#E9E9E9;-webkit-box-shadow: 0px 0px 39px 0px rgba(181,181,181,1);
+-moz-box-shadow: 0px 0px 39px 0px rgba(181,181,181,1);
+box-shadow: 0px 0px 39px 0px rgba(181,181,181,1);}
+
+.menu{width:100%;height:70px;line-height:70px;padding:0px 20px;color:white;border-bottom:2px solid #CECECE;background: rgb(143,216,125);background: -moz-linear-gradient(left, rgba(143,216,125,1) 0%, rgba(16,204,163,1) 100%);background: -webkit-linear-gradient(left, rgba(143,216,125,1) 0%,rgba(16,204,163,1) 100%);background: linear-gradient(to right, rgba(143,216,125,1) 0%,rgba(16,204,163,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fd87d', endColorstr='#10cca3',GradientType=1 );}
+.menu .menuTitle{font-family: 'Capriola', sans-serif;font-weight:900;}
+.menu .menuIcon{float:left;}
+.menu .menuIcon i{line-height:70px;cursor:pointer;z-index:11;position:absolute;}
+.menuScreen{top:0;left:0;right:0;bottom:0;padding:100px 50px;z-index:10;color:white;position:absolute;width:100%;height:600px;display:none;background: rgb(143,216,125, 0.9);background: -moz-linear-gradient(left, rgba(143,216,125,0.9) 0%, rgba(16,204,163,0.9) 100%);background: -webkit-linear-gradient(left, rgba(143,216,125,0.9) 0%,rgba(16,204,163,0.9) 100%);background: linear-gradient(to right, rgba(143,216,125,0.9) 0%,rgba(16,204,163,0.9) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fd87d', endColorstr='#10cca3',GradientType=1 );}
+.menuScreen .holdImg{width:80px;height:80px;float:left;background:url(../img/ricardo.jpg) no-repeat 50% 50%;border-radius:50%;}
+.menuScreen .holdName{width:60%;height:80px;float:left;font-size:2.3em;margin-left:30px;}
+.menuScreen .holdName span{width:100%;height:40px;float:left;line-height:40px;}
+.menuScreen .holdName span:first-child{font-weight:300;}
+.menuScreen .holdName span:last-child{font-weight:500;}
+.menuScreen .taskStats{float:left;width:100%;margin:50px 0px;}
+.menuScreen .taskStats #number{font-size:2.8em;font-weight:800;margin-left:5px;}
+.menuScreen .taskStats div{margin-left:10px;display:inline-block;height:25px;line-height:15px;font-weight:300;}
+.menuScreen .taskStats div span{width:100%;float:left;}
+.menuScreen .follow{width:100%;float:left;height:50px;line-height:50px;font-weight:400;position:absolute;bottom:30px;}
+.menuScreen .follow a:hover{text-decoration:underline;}
+.menuScreen .follow img{width:5%;vertical-align:middle;margin-right:10px;}
+
+.tasks-container{width:104%;height:467px;overflow-y:scroll;margin-top:20px;border-top:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;}
+.task{float:left;width:100%;height:100px;background:white;border-bottom:1px solid #E1E1E1;overflow:hidden;background-size:50%;}
+.task:last-child{border-bottom:0px;}
+.taskOpen{width:20%;height:100%;float:right;text-align:center;line-height:120px;color:#DEDEDE;}
+.taskOpen i{cursor:pointer;}
+.taskDetails{width:60%;height:100%;float:left;cursor:pointer;}
+.taskDetails > div{float:left;width:65%;padding:30px 5px;}
+.taskDate{float:left;width:35%;height:100%;word-wrap:break-word;padding:30px 0px;text-align:center;color:#10cca3;font-weight:900;font-size:1.1em;}
+.taskText{float:left;font-weight:500;width:100%;}
+.taskLocation{color:#CCCCCC;font-weight:400;}
+.taskOptions{float:right;width:35%;height:100%;display:none;text-align:center;background: rgb(16,204,163); background: -moz-linear-gradient(left, rgba(16,204,163,1) 0%, rgba(143,216,125,1) 99%); background: -webkit-linear-gradient(left, rgba(16,204,163,1) 0%,rgba(143,216,125,1) 99%); background: linear-gradient(to right, rgba(16,204,163,1) 0%,rgba(143,216,125,1) 99%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10cca3', endColorstr='#8fd87d',GradientType=1 );}
+.taskOptions i{color:white;line-height:100px;cursor:pointer;}
+.taskOptions i:hover{opacity:0.8;}
+.taskOptions i:last-child{margin-left:25px;}
+.taskDone{position:absolute;left:50%;font-weight:900;color:#8FD87D;opacity:0.3;line-height:40px;}
+
+.rotate{transform:rotate(90deg);-webkit-transform: rotate(90deg);}
+
+#ignoreOverflow{position:absolute;bottom:10px;right:15px;}
+.addTask{width:60px !important;height:60px !important;z-index:50;background: rgb(143,216,125);background: -moz-linear-gradient(left, rgba(143,216,125,1) 0%, rgba(16,204,163,1) 100%);background: -webkit-linear-gradient(left, rgba(143,216,125,1) 0%,rgba(16,204,163,1) 100%);background: linear-gradient(to right, rgba(143,216,125,1) 0%,rgba(16,204,163,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fd87d', endColorstr='#10cca3',GradientType=1 );}
+.addTask i{line-height:63px !important;font-size:2em;}
+
+.addTaskContainer{top:0;left:0;right:0;color:white;bottom:0;z-index:12;position:absolute;width:100%;height:600px;display:none;background: rgb(143,216,125, 0.9);background: -moz-linear-gradient(left, rgba(143,216,125,0.9) 0%, rgba(16,204,163,0.9) 100%);background: -webkit-linear-gradient(left, rgba(143,216,125,0.9) 0%,rgba(16,204,163,0.9) 100%);background: linear-gradient(to right, rgba(143,216,125,0.9) 0%,rgba(16,204,163,0.9) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fd87d', endColorstr='#10cca3',GradientType=1 );}
+.addTaskContainer h4{font-weight:200;}
+.addTaskContainer hr{border:none;border-bottom:1px solid white;margin-bottom:40px;}
+.heading span{line-height:55px;}
+.heading i{vertical-align:middle;}
+
+.input-field{margin-bottom:30px;}
+.input-field.col.s3{margin-left:20px;}
+.input-field, .input-field label{color:white;}
+.input-field input{border-bottom:1px solid white;}
+.input-field input[type=text]:focus + label {color: #fff; }
+.input-field input[type=number]:focus + label {color: #fff; }
+.input-field input[type=text]:focus {border-bottom: 1px solid #fff; box-shadow: 0 1px 0 0 #fff; }
+.input-field input[type=number]:focus {border-bottom: 1px solid #fff; box-shadow: 0 1px 0 0 #fff; }
+
+.submitTask{width:70%;border-radius:30px;padding:15px 10px;cursor:pointer;text-align:center;margin-top:20px;border:1px solid white;transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out;}
+.submitTask:hover{background:white;color:#10cca3;}
+
+.noTasks{width:100%;text-align:center;font-size:1.5em;color:#C3C3C3;font-weight:800;margin-top:40%;}
+.noTasks i{width:100%;}
+
