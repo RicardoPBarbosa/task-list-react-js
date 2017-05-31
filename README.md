@@ -1,6 +1,6 @@
 # Task List
 
-####Task List using ReactJs + Flux and MongoDB to store the tasks
+Task List using ReactJs + Flux and MongoDB to store the tasks
 
 *Praticing React with the Flux architecture*
 
